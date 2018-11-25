@@ -1,0 +1,23 @@
+# SIMson config settings
+# Default settings simulate frequent, short sessions (typically just a minute or two long)
+# Settings can be tweaked to simulate longer, more realistic sessions albiet at a slower pace
+
+# Segment settings
+segment:
+  writeKey: key_12345
+  charlesCertPath: charles-ssl-proxying-certificate.pem
+
+# Database settings
+db:
+  path: db/segment_dummy_schema.db
+
+# Session settings
+session:
+  # Set minimum number of pages/screens/events to send each session
+  requestsMin: 1
+  # Set maximum number of pages/screens/events to send each session
+  requestsMax: 24
+  # Set min number of seconds to wait between requests
+  delayMin: 1
+  # Set max number of seconds to wait between requests
+  delayMax: 5
