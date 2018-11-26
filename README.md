@@ -17,7 +17,7 @@ You will need a data.db file (see 'Dummy data DB structure' section below).  Sav
  
 2) Run the image, passing in a Segment write key and mount a dir containing a sqlite3 database named "data.db" containing dummy data to send
 
-  `docker run -it --rm -e "WRITE_KEY=<your write key>" -v <your dir containing data.db>:/data simson`
+  `docker run -it --rm -e "WRITE_KEY=<your write key>" -v <your dir containing data.db>:/data nickearl/simson`
 
 **Build from source**
 1. Pull this repository
@@ -26,9 +26,9 @@ You will need a data.db file (see 'Dummy data DB structure' section below).  Sav
   `docker build -t simson .`
 4. Run the image
 
-  `docker run -it --rm -e "WRITE_KEY=<your write key>" simson #(if you replaced /db/segment_dummy_schema.db)`
+  `docker run -it --rm -e "WRITE_KEY=<your write key>" nickearl/simson #(if you replaced /db/segment_dummy_schema.db)`
   OR
-  `docker run -it --rm -e "WRITE_KEY=<your write key>" -v <your dir containing data.db>:/data simson`
+  `docker run -it --rm -e "WRITE_KEY=<your write key>" -v <your dir containing data.db>:/data nickearl/simson`
 
 # Config file options:
 
