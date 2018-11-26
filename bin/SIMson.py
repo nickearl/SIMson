@@ -25,9 +25,13 @@ else:
 	analytics.write_key = config['segment']['writeKey']
 	print("** Write key not set, using dummy value (DATA WILL NOT BE SENT): ", analytics.write_key)
 
+#Check for supplied DB file, else fall back to example file
+if os.path.isfile('/data/data.db'):
+	config['db']['path'] = '/data/data.db'
+
 #Segment error logging
 def on_error(error, items):
-	print("**SEGMENT: An error occurred: ", error)
+	print("** SEGMENT: An error occurred: ", error)
 
 analytics.debug = True
 analytics.on_error = on_error
