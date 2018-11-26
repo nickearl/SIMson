@@ -1,4 +1,6 @@
 # SIMson
+Nick Earl, November 2018
+
 A python-based utility to generate dummy analytics data using the Segment python library
 
 This is a python script intended to be run as a Docker container.  It generates simulated user sessions to pass dummy analytics data for testing purposes
