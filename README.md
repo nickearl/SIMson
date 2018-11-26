@@ -13,7 +13,7 @@ You will need a data.db file (see 'Dummy data DB structure' section below).  Sav
 **Using Docker Hub**
 1) Grab the image from Docker Hub
 
-  `<>`
+  `docker pull nickearl/simson`
  
 2) Run the image, passing in a Segment write key and mount a dir containing a sqlite3 database named "data.db" containing dummy data to send
 
